@@ -1,6 +1,6 @@
 # TelegramBots
 Simple chatbots from relevant courses on the Stepik platform  
-1. Libs:
+Libs:
    - python-telegram-bot
    - Telegram Bot API
 
