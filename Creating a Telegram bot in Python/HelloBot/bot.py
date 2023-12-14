@@ -27,7 +27,7 @@ def get_greeting_filter (greeting: str) -> BaseFilter:
     return Filters.regex(re.compile(f"^{greeting}$", re.IGNORECASE)) & Filters.update.message
 
 def main():
-    updater = Updater("6302930510:AAEeQrJq7J5aw8xW7pDxDwKQ1K9wFK9TZs8")
+    updater = Updater("YOUR_TOKEN")
     updater.dispatcher.add_handler(CommandHandler("help", help_command))
     updater.dispatcher.add_handler(MessageHandler(get_greeting_filter("привет"), ru))
     updater.dispatcher.add_handler(MessageHandler(get_greeting_filter("hello"), en))
