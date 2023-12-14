@@ -9,7 +9,7 @@ def echo(update: Update, context: CallbackContext) -> None:
 
 
 def main() -> None:
-    updater = Updater("6341542725:AAGvWFjf7PGngQh5fPrw1gxl55AMBZdPGrM")
+    updater = Updater("YOUR_TOKEN")
     updater.dispatcher.add_handler(TypeHandler(Update, echo))
     updater.start_polling()
     print('Started')
