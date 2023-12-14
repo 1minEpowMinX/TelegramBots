@@ -44,7 +44,7 @@ def new_random_number(update: Update, context: CallbackContext) -> None:
 
 
 def main() -> None:
-    updater = Updater("5853130478:AAHx2U-54U82INcJVkQPFim3LOyI0K666Qw")
+    updater = Updater("YOUR_TOKEN")
     
     updater.dispatcher.add_handler(CallbackQueryHandler(flip_a_coin_again, pattern='^flip_a_coin_again'))
     updater.dispatcher.add_handler(CallbackQueryHandler(new_random_number, pattern='^new_random_number'))
